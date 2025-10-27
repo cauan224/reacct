@@ -1,0 +1,12 @@
+.header-container{
+background-color: rgb(118, 124, 124);
+color: rgb(255, 255, 255);
+text-align: center;
+padding: 20px;
+position: absolute;
+width: 100%;
+top: 0;
+position: absolute;
+border-radius: 10%;
+
+}
