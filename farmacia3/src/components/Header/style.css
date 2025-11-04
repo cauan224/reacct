@@ -1,0 +1,115 @@
+/* Body básico */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #eef2f5; /* tom mais suave */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* App centralizado */
+.app {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    background-color: #0056b3; /* azul mais escuro e elegante */
+    color: white;
+    padding: 15px 30px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* leve sombra */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Navegação */
+.nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #ffd700; /* destaque dourado */
+    color: #0056b3; /* contraste com o dourado */
+    transform: translateY(-2px); /* efeito leve de movimento */
+}
+
+/* Main */
+main {
+    flex: 1;
+    text-align: center;
+    padding: 120px 20px 60px; /* mais espaçamento no topo */
+}
+
+main h1 {
+    color: #0056b3;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    main {
+        padding: 100px 15px 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        gap: 10px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-link {
+        text-align: center;
+        width: 100%;
+    }
+
+    main {
+        padding: 80px 10px 40px;
+    }
+}
