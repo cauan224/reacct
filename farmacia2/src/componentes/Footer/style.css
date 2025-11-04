@@ -1,0 +1,43 @@
+.footer-container {
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border-top: 1px solid #333;
+    padding: 10px 0; /* bem mais fino */
+    position: fixed; /* fica sempre no fim da tela */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+}
+
+.footer-content strong {
+    font-size: 1rem;
+    color: #ffd700;
+}
+
+.copy {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+    .card2 {
+        font-size: 0.8rem;
+    }
+}

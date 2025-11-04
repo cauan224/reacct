@@ -1,0 +1,83 @@
+/* Container principal */
+.container {
+    max-width: 500px;
+    margin: 80px auto; /* centraliza e dá espaço do topo */
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Título */
+.container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Inputs */
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+form input:focus {
+    border-color: #007bff;
+}
+
+/* Botão */
+form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Lista */
+ul {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+ul li {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .container {
+        margin: 40px 10px;
+        padding: 15px;
+    }
+
+    form input,
+    form button {
+        font-size: 0.9rem;
+    }
+}
